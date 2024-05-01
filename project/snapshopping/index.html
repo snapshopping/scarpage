@@ -1,0 +1,151 @@
+<title>scarpage</title>
+<link rel="shortcut icon" type="image/png" href="logo.jpg">
+
+<b>سعر التوصيل 30ج</b>
+<br>
+<b>:ابعت رقم المنتج واللوكيشن الى تحب يوصله المنتج على</b>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Link</title>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=+201028768495">رسالة واتساب</a>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="product-search" placeholder="Search for product...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <br>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="h1.jpg" height="250" width="250" alt="Product 1">
+                <h3>ساعه من فيرتون</h3>
+                <b>رقم المنتج|1</b>
+                <p>$900</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="pen.jpg" height="250" width="250"alt="Product 2">
+                <h3>قلم جاف </h3>
+                <b>رقم المنتج|2</b>
+                <p>$30</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products here -->
+            <div class="product">
+                <img src="g.jpg" height="250" width="250"alt="Product 2">
+                <h3>نظارة سباحه</h3>
+                <b>رقم المنتج|3</b>
+                <p>$50</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="k.jpg" height="250" width="250"alt="Product 2">
+                <h3>foot steps</h3>
+                <b>رقم المنتج|4</b>
+                <p>$250</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="bo.jpg" height="250" width="250"alt="Product 2">
+                <h3>صندوق فارغ من بلومير للثياب</h3>
+                <b>رقم المنتج|5</b>
+                <p>$65</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="s.jpg" height="250" width="250"alt="Product 2">
+                <h3>رينج لايت 36سم</h3>
+                <b>رقم المنتج|6</b>
+                <p>$75</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="se.jpg" height="250" width="250"alt="Product 2">
+                <h3>سلك اضاءه ازرق 3 متر</h3>
+                <b>رقم المنتج|7</b>
+                <p>$50</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sta.jpg" height="250" width="250"alt="Product 2">
+                <h3>ستاند</h3>
+                <b>رقم المنتج|8</b>
+                <p>$60</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sl.jpg" height="250" width="250"alt="Product 2">
+                <h3>عصى سيلفى</h3>
+                <b>رقم المنتج|9</b>
+                <p>$30</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sel.jpg" height="250" width="250"alt="Product 2">
+                <h3>وصة شاحن ايفون</h3>
+                <b>رقم المنتج|10</b>
+                <p>$40</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Store</p>
+    </footer>
+    <script>
+        function searchProducts() {
+            var searchTerm = document.getElementById('product-search').value.toLowerCase();
+            var products = document.querySelectorAll('.product');
+
+            products.forEach(function(product) {
+                var productName = product.querySelector('h3').textContent.toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+   
+   
