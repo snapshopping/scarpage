@@ -1,25 +1,52 @@
 <title>scar page</title>
-<link herf="logo.jpg" type="img/x-icon"rel="icon"/>
-<div class="search-container">
-  <input type="text" class="search-box" id="searchBox" placeholder="ابحث هنا...">
-  <button class="search-button" onclick="search()">بحث</button>
-</div>
+<link herf="logo.png.jpg" type="img/x-icon"rel="icon"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحتي الشخصية</title>
+    <style>
+        /* تنسيق الصندوق */
+        .search-box {
+            width: 300px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
 
-<div id="searchResults"></div>
+        /* تنسيق زر البحث */
+        .search-btn {
+            background-color: #0804ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-<script>
-function search() {
-  var searchTerm = document.getElementById("searchBox").value;
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("searchResults").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "search.php?search=" + searchTerm, true);
-  xhttp.send();
-}
-</script>
+        /* تنسيق الزر عند تحويل الماوس */
+        .search-btn:hover {
+            background-color: #0060dd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- صندوق البحث -->
+    <form>
+        <input type="text" class="search-box" placeholder="ابحث عن المنتجات...">
+        <button type="submit" class="search-btn">ابحث</button>
+    </form>
+</body>
+</html>
+
 <br>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +90,7 @@ function search() {
       <p>اللون فضى فى ذهبى</p>
       <p>رقم المنتج|1</p>
       <p>السعر:700</p>
-      <button class="add-to-cart">add to card➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
+      <button class="add-to-cart">add to 🛒➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
       </button>
     </div>
   </div>
@@ -76,12 +103,24 @@ function search() {
         <p> للكاتب ديمى لوفاتو عددالصفح 403</p>
         <p>رقم المنتج|2</p>
         <p>السعر: 99</p>
-        <button class="add-to-cart">add to card➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
+        <button class="add-to-cart">add to 🛒➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
         </button>
       </div>
     </div>
 <hr>
-
+<div id="products">
+  <div class="product">
+    <img src="3.jpg" alt="Product ">
+    <div class="product-details">
+      <h2>لوحة ماوس للالعاب</h2>
+      <p> رايزر مزودة بحافه مثبته بادة ماوس للاعب</p>
+      <p>رقم المنتج|3</p>
+      <p>السعر: 55</p>
+      <button class="add-to-cart">add to 🛒➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
+      </button>
+    </div>
+  </div>
+<hr>
 
 
 
