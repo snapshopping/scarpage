@@ -1,17 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Products</title>
-</head>
-<body>
-    <form action="/search" method="GET">
-        <input type="text" name="query" placeholder="ابحث عن المنتجات...">
-        <button type="submit">ابحث</button>
-    </form>
-</body>
-</html>
+<title>scar page</title>
+<link herf="logo.jpg" type="img/x-icon"rel="icon"/>
+<div class="search-container">
+  <input type="text" class="search-box" id="searchBox" placeholder="ابحث هنا...">
+  <button class="search-button" onclick="search()">بحث</button>
+</div>
+
+<div id="searchResults"></div>
+
+<script>
+function search() {
+  var searchTerm = document.getElementById("searchBox").value;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("searchResults").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "search.php?search=" + searchTerm, true);
+  xhttp.send();
+}
+</script>
 <br>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,8 +35,8 @@
 }
 
 .product img {
-  width:277px;
-  height: 277px;
+  width: 240px;
+  height: 240px;
   margin-right: 40px;
 }
 
@@ -49,28 +57,41 @@
 <div id="products">
   <!-- Product 1 -->
   <div class="product">
-    <img src="س.jpg" height="700" width="700" alt="Product ">
+    <img src="1.jpg" height="700" width="700" alt="Product ">
     <div class="product-details">
       <h2>ساعه من فيترون</h2>
+      <p>اللون فضى فى ذهبى</p>
       <p>رقم المنتج|1</p>
-      <p>السعر: €600</p>
-      <button class="show-details">قراءة المزيد</button>
-      <div class="more-details">
-        <p>اللون فضى فى ذهبى</p>
-        <button class="hide-details">إخفاء</button>
-      </div>
-      <br>
+      <p>السعر:700</p>
       <button class="add-to-cart">add to card➡<a href="https://wa.me/+201152366798/?text=رسالة">رسالة واتساب</a>
       </button>
-    
-
-
     </div>
   </div>
-  <!-- Product 2 -->
-  <!-- اكتب الشيفرة الخاصة بالمنتج 2 هنا -->
-</div>
+  <hr>
+  <div id="products">
+    <div class="product">
+      <img src="2.jpg" alt="Product ">
+      <div class="product-details">
+        <h2>كتاب ابق قويا</h2>
+        <p> للكاتب ديمى لوفاتو عددالصفح 403</p>
+        <p>رقم المنتج|2</p>
+        <p>السعر: 99</p>
+        <button class="add-to-cart">add to card➡<a href="https://wa.me/+201152366798/?text=رسالة">رسالة واتساب</a>
+        </button>
+      </div>
+    </div>
+<hr>
 
+
+
+
+
+
+
+
+
+
+</div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const showButtons = document.querySelectorAll('.show-details');
