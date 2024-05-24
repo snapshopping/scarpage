@@ -10,11 +10,6 @@ function toggleVisibility() {
     }
 }
 
-function hideAdditionalContent() {
-    var additionalContent = document.getElementById("additionalContent");
-    var hideButton = document.getElementById("hideButton");
-    additionalContent.style.display = "none";
-    hideButton.style.display = "none";
-}
+
 
   

@@ -21,7 +21,7 @@
               <a href="#"> </a>
         </div>
         <div class="address">
-          <a href="#" class="deliver">Deliver</a>
+      
           <div class="map-icon">
             <span class="material-symbols-outlined">location_on</span>
             <a href="#" class="location">EGYPT</a>
@@ -40,13 +40,6 @@
           </div>
         </div>
 
-        <div class="sign-in">
-         <a href="#"> <p>sign in</p>
-          <span>Account &amp; Lists</span></a>
-        </div>
-
-    
-
         <div class="cart">
           <a href="#">
             <span class="material-symbols-outlined cart-icon">shopping_cart</span>
@@ -58,8 +51,7 @@
       <div class="banner">
         <div class="banner-content">
           <div class="panel">
-            <span class="material-symbols-outlined">menu</span>
-            <a href="#">All</a>
+          
           </div>
   
           <ul class="links">
@@ -75,23 +67,196 @@
       <div class="shop-images">
         <div class="shop-link">
            <img src="1.jpg" alt="card">
-          <h3>ساعه من فيترون</h3>
-          <div id="content">
-            <p>التفاصيل</p>
-            <button onclick="toggleVisibility()">قراءة المزيد</button>
-            <p id="additionalContent" style="display: none;">هنا النص الإضافي الذي يظهر بعد النقر على زر "قراءة المزيد".</p>
-            <button onclick="hideAdditionalContent()" id="hideButton" style="display: none;">إخفاء</button>
-        </div>
-        
+          <h3>ساعه من فيترون</h3> <!DOCTYPE html> <html lang="ar">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>قراءة المزيد وإخفاء النص</title>
+              <style>
+                  .more-content {
+                      display: none;
+                  }
+                  .btn {
+                      cursor: pointer;
+                      color: blue;
+                      text-decoration: underline;
+                  }
+              </style>
+          </head>
+          <body>  <p>
+                  <span id="dots"></span>
+                  <span id="more" class="more-content">
+                   الون فضى فى ذهبى المستورد الكويت
+                  </span>
+              </p>
+              <span id="readMoreBtn" class="btn" onclick="toggleText()">قراءة المزيد</span>
+              <span id="readLessBtn" class="btn more-content" onclick="toggleText()">إخفاء النص الإضافي</span>
           
-            <script src="script.js"></script>
+              <script>
+                  function toggleText() {
+                      var dots = document.getElementById("dots");
+                      var moreText = document.getElementById("more");
+                      var readMoreBtn = document.getElementById("readMoreBtn");
+                      var readLessBtn = document.getElementById("readLessBtn");
+          
+                      if (dots.style.display === "none") {
+                          dots.style.display = "inline";
+                          readMoreBtn.style.display = "inline";
+                          moreText.style.display = "none";
+                          readLessBtn.style.display = "none";
+                      } else {
+                          dots.style.display = "none";
+                          readMoreBtn.style.display = "none";
+                          moreText.style.display = "inline";
+                          readLessBtn.style.display = "inline";
+                      }
+                  }
+              </script>
+          </body>
+          </html>    <!DOCTYPE html>  <html lang="ar">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>زر نسخ</title>
+          </head>
+          <body>
+              <div>
+                  <p id="myText">رقم المنتج|1</p>
+                  <button onclick="copyText()">نسخ النص</button>
+              </div>
+
+              <script>
+                  function copyText() {
+                      // الحصول على النص من العنصر
+                      var textToCopy = document.getElementById("myText").innerText;
+          
+                      // إنشاء عنصر مؤقت لنسخ النص
+                      var tempInput = document.createElement("textarea");
+                      tempInput.value = textToCopy;
+                      document.body.appendChild(tempInput);
+          
+                      // تحديد النص في العنصر المؤقت
+                      tempInput.select();
+                      tempInput.setSelectionRange(0, 99999); // للأجهزة المحمولة
+          
+                      // تنفيذ أمر النسخ
+                      document.execCommand("copy");
+          
+                      // إزالة العنصر المؤقت
+                      document.body.removeChild(tempInput);
+                  }
+              </script>
           </body>
           </html>
-          
-          
-
+        <P>650€</P>
+          </body>
+          </html>
           <button class="add-to-cart-button">add to card➡ <a href="https://wa.me/+201152366798">وتساب</a> </button>
         </div>
+
+
+
+
+
+        <div class="shop-images">
+          <div class="shop-link">
+             <img src="1.jpg" alt="card">
+            <h3>ساعه من فيترون</h3> <!DOCTYPE html> <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>قراءة المزيد وإخفاء النص</title>
+                <style>
+                    .more-content {
+                        display: none;
+                    }
+                    .btn {
+                        cursor: pointer;
+                        color: blue;
+                        text-decoration: underline;
+                    }
+                </style>
+            </head>
+            <body>  <p>
+                    <span id="dots"></span>
+                    <span id="more" class="more-content">
+                     الون فضى فى ذهبى المستورد الكويت
+                    </span>
+                </p>
+                <span id="readMoreBtn" class="btn" onclick="toggleText()">قراءة المزيد</span>
+                <span id="readLessBtn" class="btn more-content" onclick="toggleText()">إخفاء النص الإضافي</span>
+            
+                <script>
+                    function toggleText() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var readMoreBtn = document.getElementById("readMoreBtn");
+                        var readLessBtn = document.getElementById("readLessBtn");
+            
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            readMoreBtn.style.display = "inline";
+                            moreText.style.display = "none";
+                            readLessBtn.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            readMoreBtn.style.display = "none";
+                            moreText.style.display = "inline";
+                            readLessBtn.style.display = "inline";
+                        }
+                    }
+                </script>
+            </body>
+            </html>    <!DOCTYPE html>  <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>زر نسخ</title>
+            </head>
+            <body>
+                <div>
+                    <p id="myText">رقم المنتج|1</p>
+                    <button onclick="copyText()">نسخ النص</button>
+                </div>
+  
+                <script>
+                    function copyText() {
+                        // الحصول على النص من العنصر
+                        var textToCopy = document.getElementById("myText").innerText;
+            
+                        // إنشاء عنصر مؤقت لنسخ النص
+                        var tempInput = document.createElement("textarea");
+                        tempInput.value = textToCopy;
+                        document.body.appendChild(tempInput);
+            
+                        // تحديد النص في العنصر المؤقت
+                        tempInput.select();
+                        tempInput.setSelectionRange(0, 99999); // للأجهزة المحمولة
+            
+                        // تنفيذ أمر النسخ
+                        document.execCommand("copy");
+            
+                        // إزالة العنصر المؤقت
+                        document.body.removeChild(tempInput);
+                    }
+                </script>
+            </body>
+            </html>
+          <P>650€</P>
+            </body>
+            </html>
+            <button class="add-to-cart-button">add to card➡ <a href="https://wa.me/+201152366798">وتساب</a> </button>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+
+
+
 
 
 
