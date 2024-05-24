@@ -1,118 +1,97 @@
-<head>
-<title>scar page</title>
-<link href="logo.jpg" type="img-/x-icon" rel="icon" />
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بحث</title>
-    <style>
-        /* يمكنك تخصيص التصميم حسب احتياجاتك هنا */
-        .search-box {
-            margin: 20px;
-        }
-        .search-input {
-            padding: 10px;
-            width: 234px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 12px;
-        }
-        .search-btn {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size:12px;
-        }
-    </style>
-</head>
 <body>
-    <div class="search-box">
-        <input type="text" class="search-input" placeholder="ابحث عن منتج...">
-        <button class="search-btn">بحث</button>
-    </div>
+    <title>skar shop </title>
+    <link herf="logo.jpg" type="image/x-icon" rel="icon"/>
 </body>
-</html>
 
-<br>
+
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>قائمة المنتجات</title>
-<style>
-.product {
-  display: flex;
-  align-items: center;
-  margin-bottom:20px;
-}
-
-.product img {
-  width: 240px;
-  height: 240px;
-  margin-right: 20px;
-}
-
-.product-details {
-  flex-grow: 1;
-}
-
-.more-details {
-  display: none;
-}
-
-.add-to-cart {
-  margin-top: 10px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <body>
-<div id="products">
-  <!-- Product 1 -->
-  <div class="product">
-    <img src="1.jpg" height="700" width="700" alt="Product ">
-    <div class="product-details">
-      <h2>ساعه من فيترون</h2>
-      <p>اللون فضى فى ذهبى</p>
-      <p>رقم المنتج|1</p>
-      <p>السعر:700</p>
-      <button class="add-to-cart">add to🛒➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
-      </button>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+              <a href="#"> </a>
+        </div>
+        <div class="address">
+          <a href="#" class="deliver">Deliver</a>
+          <div class="map-icon">
+            <span class="material-symbols-outlined">location_on</span>
+            <a href="#" class="location">EGYPT</a>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="select-search">
+            <option>All</option>
+            <option>All Categories</option>
+            <option> Devices</option>
+          </select>
+          <input type="text" placeholder=" Ishop" class="search-input">
+          <div class="search-icon">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+        </div>
+
+        <div class="sign-in">
+         <a href="#"> <p>sign in</p>
+          <span>Account &amp; Lists</span></a>
+        </div>
+
+    
+
+        <div class="cart">
+          <a href="#">
+            <span class="material-symbols-outlined cart-icon">shopping_cart</span>
+            </a>
+            <p>Cart</p>
+        </div>
+      </nav>
       
-    </div>
-  </div>
-  <hr>
-  <div id="products">
-    <div class="product">
-      <img src="2.jpg" alt="Product ">
-      <div class="product-details">
-        <h2>كتاب ابق قويا</h2>
-        <p> للكاتب ديمى لوفاتو عددالصفح 403</p>
-        <p>رقم المنتج|2</p>
-        <p>السعر: 99</p>
-        <button class="add-to-cart"> add to🛒➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
-        </button>
+      <div class="banner">
+        <div class="banner-content">
+          <div class="panel">
+            <span class="material-symbols-outlined">menu</span>
+            <a href="#">All</a>
+          </div>
+  
+          <ul class="links">
+            
+          <p>ابعت رقم المنتج والوكيشن الى تحب يوصله المنتج عند الضغط على زر واتساب اسفل كل منتج</p>
+        </div>
       </div>
-    </div>
-<hr>
-<div id="products">
-  <div class="product">
-    <img src="3.jpg" alt="Product ">
-    <div class="product-details">
-      <h2>لوحة ماوس للالعاب</h2>
-      <p> رايزر مزودة بحافه مثبته بادة ماوس للاعب</p>
-      <p>رقم المنتج|3</p>
-      <p>السعر: 55</p>
-      <button class="add-to-cart">add to🛒➡<a href="https://wa.me/+201152366798/?text=رسالة"> واتساب</a>
-      </button>
-    </div>
-  </div>
-<hr>
+    </header>
+
+ 
+
+    <section class="shop-section">
+      <div class="shop-images">
+        <div class="shop-link">
+           <img src="1.jpg" alt="card">
+          <h3>ساعه من فيترون</h3>
+          <div id="content">
+            <p>التفاصيل</p>
+            <button onclick="toggleVisibility()">قراءة المزيد</button>
+            <p id="additionalContent" style="display: none;">هنا النص الإضافي الذي يظهر بعد النقر على زر "قراءة المزيد".</p>
+            <button onclick="hideAdditionalContent()" id="hideButton" style="display: none;">إخفاء</button>
+        </div>
+        
+          
+            <script src="script.js"></script>
+          </body>
+          </html>
+          
+          
+
+          <button class="add-to-cart-button">add to card➡ <a href="https://wa.me/+201152366798">وتساب</a> </button>
+        </div>
 
 
 
@@ -122,22 +101,19 @@
 
 
 
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const showButtons = document.querySelectorAll('.show-details');
-  showButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const moreDetails = this.nextElementSibling;
-      moreDetails.style.display = 'block';
-    });
-  });
 
-  const hideButtons = document.querySelectorAll('.hide-details');
-  hideButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      this.parentNode.style.display = 'none';
-    });
-</script>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+       
+    </section>
+
+    
+       
